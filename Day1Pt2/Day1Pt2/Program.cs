@@ -14,23 +14,24 @@ namespace Day1Pt2
 
             int sum = 0;
 
-            while (sum >= 0)
+            for (int i = 0; i < input.Length; i++)
             {
-                for (int i = 0; i < input.Length; i++)
+                if (input[i] == '(')
                 {
-                    if (input[i] == '(')
-                    {
-                        sum++;
-                    }
-                    else if (input[i] == ')')
-                    {
-                        sum--;
-                    }
+                    sum++;
                 }
-                Console.WriteLine("Santa, please proceed to floor " + sum);
-                Console.ReadLine();
-            }
+                else if (input[i] == ')')
+                {
+                    sum--;
+                }
 
+                if (sum < 0)
+                {
+                    Console.WriteLine(sum + "-" + (i + 1));
+                    break;
+                }
+            }
+            Console.ReadLine();
 
 
             #region PracticeLoop
