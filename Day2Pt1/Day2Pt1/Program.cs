@@ -10,6 +10,12 @@ namespace Day2Pt1
     {
         static void Main(string[] args)
         {
+
+            string text = System.IO.File.ReadAllText(@"C:\Users\Erin\Desktop\Git\AdventOfCode\Day2Pt1\Day2Input.txt");
+
+            Console.WriteLine("Contents of txt = {0}", text);
+
+            Console.ReadLine();
         }
     }
 }
