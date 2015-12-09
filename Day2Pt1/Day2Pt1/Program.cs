@@ -31,7 +31,6 @@ namespace Day2Pt1
 
              */
 
-            int counter = 0;
             int total = 0;
             string line;
 
@@ -61,7 +60,6 @@ namespace Day2Pt1
                 total = total + area;
 
                 //Console.WriteLine(w + "-" + h + "-" + l + "-" + s + "-" + area + "-" + total);
-                counter++;
             }
             Console.WriteLine(total);
 
