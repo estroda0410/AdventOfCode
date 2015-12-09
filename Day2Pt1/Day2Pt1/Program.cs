@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,14 +31,12 @@ namespace Day2Pt1
 
              */
 
-            string text = System.IO.File.ReadAllText(@"C:\Users\Erin\Desktop\Git\AdventOfCode\Day2Pt1\Day2Input.txt");
-
             int counter = 0;
             int total = 0;
             string line;
 
-            System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Erin\Desktop\Git\AdventOfCode\Day2Pt1\Day2Input.txt");
-            //System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Erin\Desktop\Git\AdventOfCode\Day2Pt1\TestInput.txt");
+            StreamReader file = new StreamReader(@"C:\Users\Erin\Desktop\Git\AdventOfCode\Day2Pt1\Day2Input.txt");
+            //StreamReader file = new StreamReader(@"C:\Users\Erin\Desktop\Git\AdventOfCode\Day2Pt1\TestInput.txt");
 
             while ((line = file.ReadLine()) != null)
             {
