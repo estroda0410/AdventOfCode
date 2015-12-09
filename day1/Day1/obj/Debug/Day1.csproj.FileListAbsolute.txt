@@ -1,6 +1,0 @@
-C:\Users\Erin\Desktop\Git\AdventOfCode\Day1\Day1\bin\Debug\Day1.exe.config
-C:\Users\Erin\Desktop\Git\AdventOfCode\Day1\Day1\bin\Debug\Day1.exe
-C:\Users\Erin\Desktop\Git\AdventOfCode\Day1\Day1\bin\Debug\Day1.pdb
-C:\Users\Erin\Desktop\Git\AdventOfCode\Day1\Day1\obj\Debug\Day1.csprojResolveAssemblyReference.cache
-C:\Users\Erin\Desktop\Git\AdventOfCode\Day1\Day1\obj\Debug\Day1.exe
-C:\Users\Erin\Desktop\Git\AdventOfCode\Day1\Day1\obj\Debug\Day1.pdb
