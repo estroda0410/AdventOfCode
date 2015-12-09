@@ -30,9 +30,46 @@ namespace Day2Pt2
              
              * How many total feet of ribbon should they order?
              */
+            
+            
+            int total = 0;
+            string line;
 
             StreamReader file = new StreamReader(@"C:\Users\Erin\Desktop\Git\AdventOfCode\Day2Pt1\Day2Input.txt");
 
+            while ((line = file.ReadLine()) != null)
+            {
+                int perimeter = 0;
+                int cV = 0;
+                int ribbon = 0;
+
+                int endW = line.IndexOf("x");
+                int beginH = endW + 1;
+                int endH = line.LastIndexOf("x");
+                int beginL = endH + 1;
+
+                int w = Convert.ToInt16(line.Substring(0, endW));
+                int h = Convert.ToInt16(line.Substring(beginH, (endH - beginH)));
+                int l = Convert.ToInt16(line.Substring(beginL, (line.Length - beginL)));
+
+                int[] m = new int[3] { w, h, l };
+
+                Array.Sort(m);
+
+
+                int l1 = m[0];
+                int l2 = m[1];
+
+                perimeter = ((l1 * 2) + (l2 * 2));
+                cV = w * h * l;
+                ribbon = perimeter + cV;
+                total = total + ribbon;
+
+                //Console.WriteLine((string.Join(",", m)) + "-" + perimeter + "-" + cV + "-" + ribbon + "-" + total);
+            }
+
+            Console.WriteLine(total);
+            Console.ReadLine();
 
         }
     }
