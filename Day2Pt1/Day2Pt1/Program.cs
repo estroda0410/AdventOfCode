@@ -61,9 +61,10 @@ namespace Day2Pt1
                 area = (2 * a1) + (2 * a2) + (2 * a3) + s;
                 total = total + area;
 
-                Console.WriteLine(w + "-" + h + "-" + l + "-" + s + "-" + area + "-" + total);
+                //Console.WriteLine(w + "-" + h + "-" + l + "-" + s + "-" + area + "-" + total);
                 counter++;
             }
+            Console.WriteLine(total);
 
             Console.ReadLine();
         }
