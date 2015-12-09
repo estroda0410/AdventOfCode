@@ -42,11 +42,11 @@ namespace Day2Pt1
                 int area = 0;
 
                 int endW = line.IndexOf("x");
-                int w = Convert.ToInt16(line.Substring(0, endW));
-
                 int beginH = endW + 1;
                 int endH = line.LastIndexOf("x");
                 int beginL = endH + 1;
+
+                int w = Convert.ToInt16(line.Substring(0, endW));
                 int h = Convert.ToInt16(line.Substring(beginH, (endH - beginH)));
                 int l = Convert.ToInt16(line.Substring(beginL, (line.Length - beginL)));
 
