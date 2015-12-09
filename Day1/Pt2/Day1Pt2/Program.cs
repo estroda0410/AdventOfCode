@@ -10,7 +10,7 @@ namespace Day1Pt2
     {
         static void Main(string[] args)
         {
-            string input = System.IO.File.ReadAllText(@"C:\Users\Erin\Desktop\Git\AdventOfCode\Day1\Day1Input.txt");
+            string input = System.IO.File.ReadAllText(@"C:\Users\Erin\Desktop\Git\AdventOfCode\Day1\Pt1\Day1Input.txt");
 
             int sum = 0;
 
@@ -27,7 +27,8 @@ namespace Day1Pt2
 
                 if (sum < 0)
                 {
-                    Console.WriteLine(sum + "-" + (i + 1));
+                    //Console.WriteLine(sum + "-" + (i + 1));
+                    Console.WriteLine(i + 1);
                     break;
                 }
             }

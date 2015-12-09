@@ -35,7 +35,7 @@ namespace Day2Pt2
             int total = 0;
             string line;
 
-            StreamReader file = new StreamReader(@"C:\Users\Erin\Desktop\Git\AdventOfCode\Day2Pt1\Day2Input.txt");
+            StreamReader file = new StreamReader(@"C:\Users\Erin\Desktop\Git\AdventOfCode\Day2\Pt1\Day2Input.txt");
 
             while ((line = file.ReadLine()) != null)
             {
