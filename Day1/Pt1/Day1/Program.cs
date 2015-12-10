@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,7 @@ namespace Day1
     {
         static void Main(string[] args)
         {
-            string input = System.IO.File.ReadAllText(@"C:\Users\Erin\Desktop\Git\AdventOfCode\Day1\Pt1\Day1Input.txt");
+            string input = File.ReadAllText(@"C:\Users\Erin\Desktop\Git\AdventOfCode\Day1\Pt1\Day1Input.txt");
 
             int sum = 0;
 
