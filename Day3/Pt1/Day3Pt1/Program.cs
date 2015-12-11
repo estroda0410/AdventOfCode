@@ -30,10 +30,16 @@ namespace Day3Pt1
              * starting/ending location.
              * ^v^v^v^v^v delivers a bunch of presents to some very lucky children at only 2 houses.
              */
-            int y = 1;
-            int x = 1;
+
+            int x = 0;
+            int y = 0;
+
+            HashSet<string> houses = new HashSet<string>();
+
+            houses.Add(x.ToString() + " " + y.ToString());
 
             string input = File.ReadAllText(@"C:\Users\Erin\Desktop\Git\AdventOfCode\Day3\Day3Input.txt");
+            //string input = "^v^v^v^v^v";
 
             for (int i = 0; i < input.Length; i++)
             {
@@ -57,8 +63,17 @@ namespace Day3Pt1
                         continue;
                 }
 
-
+                houses.Add(x.ToString() + " " + y.ToString());
             }
+
+            foreach (var item in houses)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine(houses.Count);
+
+            Console.ReadLine();
         }
     }
 }
